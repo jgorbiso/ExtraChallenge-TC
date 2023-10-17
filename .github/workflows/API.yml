@@ -1,0 +1,15 @@
+name: TestCafe workflow - API Testing
+
+on: [push]
+
+jobs:
+  build:
+    name: Run TestCafe tests
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install TestCafe from npm and Run API Tests
+      uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome tests/apiTesting/*.js"
