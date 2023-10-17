@@ -1,0 +1,21 @@
+{
+  "name": "extrachallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "testcafe chrome:headless tests/apiTesting/*.js",
+    "test:pom": "testcafe chrome:headless tests/pageObjectModel/tests/*.js",
+    "test:allure-report": "allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "allure-commandline": "^2.24.1",
+    "testcafe": "^3.3.0",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

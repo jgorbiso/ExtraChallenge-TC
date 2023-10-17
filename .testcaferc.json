@@ -1,0 +1,17 @@
+{
+    "debugOnFail": true,
+    "reporter": {
+        "name" : "list"
+    },
+    "screenshots": {
+        "path": "screenshots",
+        "takeOnFails": true,
+        "fullPage": true
+    },
+    "speed": 1,
+    "videoPath": "artifacts/videos",
+    "videoOptions": {
+        "singleFile": true,
+        "takeOnFails": true
+    }
+}
